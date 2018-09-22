@@ -4,6 +4,14 @@
 -dontwarn org.w3.**
 -dontwarn com.microsoft.schemas.**
 -dontwarn com.graphbuilder.**
+-dontwarn com.sun.msv.datatype.**
+-dontwarn org.relaxng.datatype.**
+-dontwarn javax.swing.**
+-dontwarn org.jaxen.**
+-dontwarn javax.xml.bind.**
+-dontwarn org.gjt.xpp.**
+
+
 -dontnote org.apache.**
 -dontnote org.openxmlformats.schemas.**
 -dontnote org.etsi.**
