@@ -1,10 +1,11 @@
 apply plugin: 'com.github.johnrengelman.shadow'
 apply plugin: 'java' // Needed for shadow to work
 apply plugin: 'maven-publish'
+
 assemble.dependsOn shadowJar
 
 dependencies {
-    implementation "org.apache.poi:poi-ooxml:$poiVersion"
+    implementation "org.apache.poi:poi-ooxml:3.9"
     implementation 'org.apache.xmlbeans:xmlbeans:2.6.0'
     implementation 'com.fasterxml:aalto-xml:1.0.0'
 }
@@ -53,7 +54,7 @@ artifacts {
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            groupId 'com.supercilex.poiandroid'
+            groupId 'com.lennoard.poiandroid'
             artifactId 'poi'
             version poiVersion
 

@@ -93,9 +93,6 @@ class MainActivity : AppCompatActivity() {
                 setCellValue(0.0)
                 cellStyle = workbook.createCellStyle().apply {
                     dataFormat = workbook.createDataFormat().getFormat("0.00")
-                    setFont(workbook.createFont().apply { bold = true })
-                    setAlignment(HorizontalAlignment.CENTER)
-                    setVerticalAlignment(VerticalAlignment.CENTER)
                 }
             }
             createCell(1).apply {
@@ -111,32 +108,6 @@ class MainActivity : AppCompatActivity() {
             createChart(createAnchor(0, 0, 0, 0, 4, 2, 10, 6))
         }.apply {
             orCreateLegend.position = LegendPosition.RIGHT
-
-            chartDataFactory.createLineChartData().apply {
-                addSeries(
-                        DataSources.fromStringCellRange(
-                                this@populate,
-                                CellRangeAddress(0, 0, 1, 1)
-                        ),
-                        DataSources.fromNumericCellRange(
-                                this@populate,
-                                CellRangeAddress(0, 1, 0, 0)
-                        )
-                ).setTitle("Foobar")
-                plot(
-                        this,
-                        chartAxisFactory.createCategoryAxis(AxisPosition.BOTTOM),
-                        chartAxisFactory.createValueAxis(AxisPosition.LEFT).apply {
-                            crosses = AxisCrosses.AUTO_ZERO
-                        }
-                )
-            }
-
-            if (this is XSSFChart) {
-                val plotArea = ctChart.plotArea
-                plotArea.getValAxArray(0).addNewTitle().setValue("Values")
-                plotArea.getCatAxArray(0).addNewTitle().setValue("Title")
-            }
         }
     }
 
