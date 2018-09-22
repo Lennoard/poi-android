@@ -15,17 +15,21 @@
 -dontwarn javax.xml.bind.**
 -dontwarn javax.xml.validation.**
 -dontwarn javax.xml.xpath.**
+-dontwarn schemasMicrosoftComOfficeExcel.**
+-dontwarn schemasMicrosoftComOfficeOffice.**
+-dontwarn schemasMicrosoftComVml.**
 -dontwarn org.w3c.dom.**
+
 -dontnote org.apache.**
 -dontnote org.openxmlformats.schemas.**
 -dontnote org.etsi.**
 -dontnote org.w3.**
 -dontnote com.microsoft.schemas.**
 -dontnote com.graphbuilder.**
--dontnote schemasMicrosoftComOfficeExcel.**
--dontnote schemasMicrosoftComOfficeOffice.**
--dontnote schemasMicrosoftComVml.**
 -dontnote android.util.Xml.**
+-dontnote org.w3c.dom.**
+-dontnote org.xml.sax.**
+-dontnote javax.xml.**
 
 -keeppackagenames org.apache.poi.ss.formula.function
 
