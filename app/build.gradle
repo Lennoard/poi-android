@@ -43,9 +43,4 @@ dependencies {
 
     implementation 'com.android.support:multidex:1.0.3'
     implementation "com.android.support:design:$supportLibVersion"
-    implementation 'com.android.support.constraint:constraint-layout:1.1.0-beta6'
-
-    implementation "com.google.android.gms:play-services-tasks:12.0.1"
-
-    implementation 'pub.devrel:easypermissions:1.2.0'
 }

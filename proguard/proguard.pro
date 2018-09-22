@@ -6,18 +6,26 @@
 -dontwarn com.graphbuilder.**
 -dontwarn com.sun.msv.datatype.**
 -dontwarn org.relaxng.datatype.**
--dontwarn javax.swing.**
 -dontwarn org.jaxen.**
--dontwarn javax.xml.bind.**
 -dontwarn org.gjt.xpp.**
-
-
+-dontwarn org.xml.sax.**
+-dontwarn org.dom4j.bean.**
+-dontwarn org.dom4j.swing.**
+-dontwarn javax.swing.**
+-dontwarn javax.xml.bind.**
+-dontwarn javax.xml.validation.**
+-dontwarn javax.xml.xpath.**
+-dontwarn org.w3c.dom.**
 -dontnote org.apache.**
 -dontnote org.openxmlformats.schemas.**
 -dontnote org.etsi.**
 -dontnote org.w3.**
 -dontnote com.microsoft.schemas.**
 -dontnote com.graphbuilder.**
+-dontnote schemasMicrosoftComOfficeExcel.**
+-dontnote schemasMicrosoftComOfficeOffice.**
+-dontnote schemasMicrosoftComVml.**
+-dontnote android.util.Xml.**
 
 -keeppackagenames org.apache.poi.ss.formula.function
 
