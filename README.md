@@ -1,4 +1,4 @@
-# POI Android
+# POI 3.9 Android
 
 [![Build Status](https://travis-ci.org/SUPERCILEX/poi-android.svg?branch=master)](https://travis-ci.org/SUPERCILEX/poi-android)
 
